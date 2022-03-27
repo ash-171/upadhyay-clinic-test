@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Upadhyay Clinic</title>
+      <link rel="shortcut icon" href="Screenshot 2021-12-12 124550.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Changa+One&family=Headland+One&family=Lalezar&family=Lobster&family=Prociono&family=Song+Myung&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&family=Changa+One&family=Headland+One&family=Lalezar&family=Lobster&family=Pavanam&family=Prociono&family=Song+Myung&display=swap" rel="stylesheet">
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <style>
+          .vl {
+            border-left: 6px solid green;
+            height: 50px;
+            float: left;
+          }
+        </style> 
+    </head>
+
+    <body>
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Upadhyay-Clinic-Assistant"
+  agent-id="4fcb70f5-b78e-48a3-9101-085c9cac1439"
+  language-code="en"
+></df-messenger>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <div style="position: fixed; width: 100%;">
+      <span>
+      <div class="vl"></div>
+      </span>
+      <span>
+        
+     <div class="topnav" id="myTopnav">
+          <div class="navbar-header">
+            <a class="active" href="#">
+                    <img src="Screenshot 2021-12-12 124550.png"  width="35px">
+        </a>
+        <a class="company-name" href="#">Upadhyay Clinic</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        </div>
+          <div class="topnav-right">
+            <a href="#se"><i class='fa fa-medkit'></i>&nbsp;&nbsp;Services</a>
+            <a href="#ab"><i class='fa fa-user-md'></i>&nbsp;&nbsp;About Us</a>
+            <a href="#main"><i class="fa fa-calendar"></i>&nbsp;&nbsp;Make Appointment</a>
+            <a href="#cont"><i class="fa fa-phone"></i>&nbsp;Call now</a>
+            <a href="#cont"><i class='fa fa-building'></i>&nbsp;&nbsp;Get Directions</a>
+          </div>
+      </div>
+      </div>
+      </span>
+      <div>
+        <div class="icon-bar">
+          <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa fa-google"></i></a>
+          <a href="#" class="google"><i class="fa fa-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          <a href="#" class="youtube"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <img src="ezgif.com-gif-maker.gif" width="100%" background-size="cover" height="100%" background-position="right">
+        <div class="text-block">
+          <h4>A Medical Clinic in Delhi and Noida</h4>
+          <p>Open till 8:30PM from Mon-Sat and till 2:00AM on Sun</p>
+          <button type="button" class="block" href="#main">MAKE APPOINTMENT</button>
+          <br>
+        </div>
+      </div>
+<section>
+  <img src="Screenshot 2021-12-18 203256.png" width="100%">
+</section>
+<br>
+  <marquee>LAB REPORTS FEATURE COMING SOON  ~  UPADHYAY CLINIC</marquee>
+<section id="se">
+  <br>
+  <h4 style="font-family: 'Headland One'; color: black; text-align: center; font-weight: 600;">SERVICES</h4>
+  <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0);width:70px;">
+ <div>
+  <div class="tab">
+    <button class="tablinks" class="active" id="defaultOpen" onclick="openCity(event, 'Ultrasound')">Ultrasound</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">X-Ray</button>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">ECG</button>
+    <button class="tablinks" onclick="openCity(event, 'T')">OPG</button>
+    <button class="tablinks" onclick="openCity(event, 'To')">PFT</button>
+    <button class="tablinks" onclick="openCity(event, 'Tok')">TMT</button>
+    <button class="tablinks" onclick="openCity(event, 'Tok1')">All Laboratory Tests</button>
+    <button class="tablinks" onclick="openCity(event, 'Tok2')">FNAC</button>
+    <button class="tablinks" onclick="openCity(event, 'Tok3')">BIOPSY</button>
+  </div>
+  
+  <div id="Ultrasound" class="tabcontent" class="container">
+    <h3>Ultrasound</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h3>X-Ray</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h3>ECG</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="T" class="tabcontent">
+    <h3>OPG</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+  <div id="To" class="tabcontent">
+    <h3>PFT</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="Tok" class="tabcontent">
+    <h3>TMT</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="Tok1" class="tabcontent">
+    <h3>All Laboratory Tests</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+  <div id="Tok2" class="tabcontent">
+    <h3>FNAC</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+  <div id="Tok3" class="tabcontent">
+    <h3>BIOPSY</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  
+</div>
+
+</section>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<section id="ab">
+  <br>
+    <div style="background-color: rgb(255, 255, 255);">
+    <br>
+    <h4 style="font-family: 'Headland One'; color: black; text-align: center; font-weight: 600;">ABOUT US</h4>
+    <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0);width:70px;">
+    <div class="card">
+      <div class="container">
+        <p style="text-align: center; ">History (from Greek ἱστορία, historia, meaning "inquiry; knowledge acquired by investigation")[2] is the study and the documentation of the past.[3][4] Events before the invention of writing systems are considered prehistory. "History" is an umbrella term comprising past events as well as the memory, discovery, collection, organization, presentation, and interpretation of these events. Historians seek knowledge of the past using historical sources such as written documents, oral accounts, art and material artifacts, and ecological markers.[5]
+
+          History is also an academic discipline which uses narrative to describe, examine, question, and analyze past events, and investigate their patterns of cause and effect.[6][7] Historians often debate which narrative best explains an event, as well as the significance of different causes and effects. Historians also debate the nature of history as an end in itself, as well as its usefulness to give perspective on the problems of the present.[6][8][9][10]
+          
+          Stories common to a particular culture, but not supported by external sources (such as the tales surrounding King Arthur), are usually classified as cultural heritage or legends.[11][12] History differs from myth in that it is supported by evidence. However, ancient cultural influences have helped spawn variant interpretations of the nature of history which have evolved over the centuries and continue to change today. The modern study of history is wide-ranging, and includes the study of specific regions and the study of certain topical or thematic elements of historical investigation. History is often taught as part of primary and secondary education, and the academic study of history is a major discipline in university studies.
+          
+          Herodotus, a 5th-century BC Greek historian, is often considered the "father of history" in the Western tradition,[13] although he has also been criticized as the "father of lies".[14][15] Along with his contemporary Thucydides, he helped form the foundations for the modern study of past events and societies. Their works continue to be read today, and the gap between the culture-focused Herodotus and the military-focused Thucydides remains a point of contention or approach in modern historical writing. In East Asia, a state chronicle, the Spring and Autumn Annals, was reputed to date from as early as 722 BC, although only 2nd-century BC texts have survived.</p>
+      </div>
+    </div>
+    </div>
+</section>
+
+<section id="main">
+  <br>
+  <h4 style="font-family: 'Headland One'; color: black; text-align: center; font-weight: 600;">Make Appointment</h4>
+  <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0);width:70px;">
+  
+  <form class="container" onreset="load();">
+    <p>Please fill in this form to Make an Appointment</p>
+        <hr>
+        <label><b>Patients Name</b></label>
+        <input type="text" placeholder="Enter Patient's Name" id="name" required>
+    
+        <label><b>Phone Number</b></label>
+        <input type="text" placeholder="Enter Phone Number" id="number" required>
+    
+        <label><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" id="email" required>
+        
+        <label><b>Date of Appointment</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" placeholder="Enter Date" id="date" required>
+        
+        <label><b>Time of Appointment</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="time" placeholder="Enter Time" id="time" min="08:00 " max="8:30" required>
+        
+        <label><b>Visit Reason(*Optional)</b></label>
+        <input type="text" placeholder="Enter Reason" id="ail">
+        <hr>
+        <input type="reset" value="Confirm" class="registerbtn">
+  </form>
+    
+</section>
+
+<br>
+
+<h4 style="font-family: 'Headland One'; color: black; text-align: center; font-weight: 600;">Gallery</h4>
+  <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0);width:70px;">
+<br>
+<div class="row">
+  <div class="column">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+    <img src="https://d3e44x6tjqv3e6.cloudfront.net/sites/default/files/2019-08/Medical%20Aid%20Abroad.jpg" style="width:100%">
+  </div>  
+</div>
+  <div class="container">
+    <h2><b>What our Patients say</b></h2>
+  </div>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <h4>"Very nice clinic the staff is very cooperative and helpful. The doctors are amazing and very qualified they also clear any queries of yours and they are taking all the covid precautions for the safety of us and everyone . Report is also given hand to hand without having to wait for too long"<br><span style="font-style:normal;"></span></h4>
+    </div>
+    <div class="item">
+      <h4>"Best clinic for diagnostics"<br><span style="font-style:normal;"></span></h4>
+    </div>
+    <div class="item">
+      <h4>"Doctor is good and they provide report hand to hand.
+        I am satisfy with checkup. I like it. 👍?"<br><span style="font-style:normal;"></span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<section id="cont">
+  <br>
+  <h4 style="font-family: 'Headland One'; color: black; text-align: center; font-weight: 600;">Contact Us</h4>
+  <hr style="height:3px;border-width:0;color:rgb(0, 0, 0);background-color:rgb(0, 0, 0);width:70px;">
+
+   <div class="container">
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=10XMHqJ4-OUriYuJJeJ6unRQcxyDnhcNF&ehbc=2E312F" width="100%" height="480"></iframe>
+    <br>
+    <h4><b>Contact</b></h4><br>
+    <span id="contactdetails" class="registerbtn">
+        Call us at 
+      <a class="contactnum" href="tel:8882192787">9711906652</a>
+      <a class="contactnum" href="tel:070680 49536">, 070680 49536</a>
+      <a class="contactnum" href="tel:01140036729">, 011-4003-6729</a>
+      <a class="contactnum" href="tel:9871681119">, 9871681119</a>    
+    </span>
+    <br>
+    <br>
+      <h4><b>Directions</b></h4>
+      <button type="submit" class="registerbtn">Get Directions</button><br>
+      <br>
+      <label>
+        H-17, Main Noida 22 Rd, Block B, Sector 22, Noida, Uttar Pradesh 201307;
+        <br>
+        80A, Pocket A 2, Mayur Vihar Phase III, Gharoli, Delhi, 110096
+      </label>
+      <br>
+      <h4><b>Business Hours</b></h4>
+     <img src="Screenshot 2021-12-25 125718.png">
+     <br>
+     <h4><b>Mail</b></h4>
+      <br>
+      <a id="sendmail" class="registerbtn" href="mailto:upadhyayclinic@gmail.com?Subject=Comments">upadhyayclinic@gmail.com</a><br>
+      <br>
+   </div>
+
+</section>
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
+          <h6>About</h6>
+          <p class="text-justify">Upadhyay Clinic is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          <br>
+        </div>
+
+        <div class="col-lg-6 col-sm-12 col-md-6 col-xs-12">
+          <form name="loginForm" action="login.html" method="get">
+            <table width="100%" bgcolor="0099CC" align="center">
+            <tr>
+            <td>Username :</td>&nbsp;&nbsp;&nbsp;
+            <td><input type="text" width="100%" height="20px" size=25 name="userid"></td>
+            </tr>
+            
+            <tr>
+            <td>Password :</td>&nbsp;&nbsp;&nbsp;
+            <td><input type="Password" size=25 name="pwd"></td>
+            </tr>
+            
+            <tr>
+            <td >
+              <input type="Reset" class="btn btn-warning"></td>
+            <td>
+              <input type="submit" onclick="check(this.form)" value="Login" class="btn btn-danger"></td>
+            </tr>
+            
+            </table>
+            </form>
+          </div>
+        <br><br>
+      </div>
+    </div>
+</footer>
+
+    <script src="main.js"></script>
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+
+    </body>
+</html>
